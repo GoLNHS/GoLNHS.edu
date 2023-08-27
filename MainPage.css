@@ -1,0 +1,299 @@
+/* css font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Poppins:wght@100;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    --main-color: #000;
+    --font-color: #068FFF;
+    color: var(--main-color);
+    box-sizing: border-box;
+   
+}
+body {
+    background: url("Logos/LaLa View.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+   padding: 1rem 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   z-index: 100;
+   background-color: rgba(255, 255, 255);
+}
+header sup {
+    font-size: 13px;
+    
+}
+.navigation a {
+    display: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.navigation a.active {
+  color: #068FFF;
+}
+.navigation a:hover {
+    color: #068FFF;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.50rem 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    gap: 2rem;
+}
+.text-1 {
+    position: relative;
+    padding: 1.5rem 1.3rem;
+    max-width: 600px;
+    max-height: auto;
+    background-color: #fff;
+    top: 7%;
+    left: 1%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text-1 h1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+}
+.text-1 .p-span {
+    color: var(--font-color);
+}
+
+.text-1 h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.text-1 p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5rem 2%;
+    background-color: white;
+    z-index: auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo p {
+    margin-left: 25px;
+}
+.logo img {
+    border: 2px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+ .right-images {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem 5%;
+    height: 500px;
+    left: 2%;
+    top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+.right-images .image-container {
+    position: relative;
+    top: -1%;
+    background-color:rgba(255, 255, 255, 0.281);
+    width: fit-content;
+    border-radius: 25px;
+    
+}
+.image-container img {
+    max-width: 400px;
+    opacity: 1;
+}
+.foot-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+.foot-container .foot-text {
+
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 400;
+}
+.foot-text {
+    text-align: center;
+    height: 50px;
+}
+.foot-text span {
+    color: var(--font-color);
+    font-size: 12px;
+}
+.foot-logo img {
+    width: 50px;
+    margin: 1px 5px;
+    border-radius: 50px;
+}
+
+
+
+@media (max-width: 475px) {
+    .right-images {
+        display: none;
+    }
+    .text-1 {
+        max-width: 300px;
+        max-height: 500px;
+       
+    }
+    .text-1 h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .text-1 h3 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .text-1 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .foot-container {
+        height: 70px ;
+    }
+    .foot-container img {
+        width: 25px;
+        padding-top: 10px;
+    }
+    .foot-text h4 {
+        font-size: 8px;
+        display: block;
+        height: 10px;
+        z-index: 1 ;
+    }
+    .foot-text span {
+        font-size: 10px;
+    }
+}
+/* 640px style */
+@media (max-width: 640px) {
+    .right-images {
+        display: none;
+    }
+    .text-1 {
+        max-width: 500px;
+        max-height: 800px;
+       
+    }
+    .text-1 h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .text-1 h3 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .text-1 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .foot-container {
+        height: 70px ;
+    }
+    .foot-container img {
+        width: 25px;
+        padding-top: 10px;
+    }
+    .foot-text h4 {
+        font-size: 8px;
+        display: block;
+        height: 10px;
+        z-index: 1 ;
+    }
+    .foot-text span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .right-images {
+        display: flex;
+    }
+    .text-1 {
+        max-width: 500px;
+        max-height: 1000px;
+       
+    }
+    .text-1 h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .text-1 h3 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .text-1 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .foot-container {
+        height: 70px ;
+    }
+    .foot-container img {
+        width: 25px;
+        padding-top: 10px;
+    }
+    .foot-text h4 {
+        font-size: 8px;
+        display: block;
+        height: 10px;
+        z-index: 1 ;
+    }
+    .foot-text span {
+        font-size: 10px;
+    }
+}
+@media (max-width: 875px) {
+    .right-images {
+        display: none;
+    }
+}
+
+
+
+
+
+
